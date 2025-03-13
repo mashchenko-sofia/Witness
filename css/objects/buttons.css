@@ -1,0 +1,54 @@
+.btn-start {
+    font-size: 10vw;
+    
+    text-shadow: 20px 20px 15px black;
+}
+
+
+
+.btn {
+    position: absolute;
+    z-index: 1;
+    
+    width: 360px;
+    height: 70px; 
+   
+    /* width: 30vw;
+    height: 12vw; */
+    padding: 0 0 0 40px;
+}
+.btn::after {
+    content: "";
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.btn__text {
+    /* font-size: calc(2vw + 10px); */
+    font-size: 32px;
+}
+
+
+
+
+.btn-menu {
+    right: -3%;
+    bottom: 20%;
+}
+.btn-main {
+    right: 0%;
+    bottom: 20%;
+}
+
+
+
+.btn-arrow-right {
+    rotate: 180deg;
+}

@@ -1,0 +1,67 @@
+.card {
+    position: absolute;
+    /* position: relative; */
+    z-index: 3;
+
+    border-width: 2px 2px 2px 10px;
+    border-color: var(--color-main);
+    border-style: solid;
+
+    /* width: 300px; */
+    padding: 3px;
+    /* box-sizing: border-box; */
+
+    display: flex;
+    gap: 25px;
+    /* justify-content: space-between; */
+}
+.card__title {
+    font-size: 20px;
+}
+.card__buttons {
+    display: flex;
+    gap: 10px;
+
+    padding: 10px 5px 10px 10px;
+}
+
+
+
+.card-1 {
+    top: 15%;
+}
+.card-2 {
+    top: 50%;
+    right: 4%;
+}
+.card-3 {
+    top: 73%;
+    left: 3%;
+}
+
+
+
+.card::after {
+    content: url(/img/card-arrow.svg);
+    position: absolute;
+
+    left: 100%;
+    top: 100%;
+}
+.card-2::after {
+    left: -10px;
+    top: 0;
+
+    transform-origin: left top;
+    rotate: 180deg;
+}
+
+
+
+.btn-choose-color {
+    width: 30px;
+    height: 30px;
+    background: rgb(201, 201, 201);
+
+    /* border-radius: 5px; */
+}

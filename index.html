@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witness</title>
+    <link rel="stylesheet" href="./css/01__index.css">
+</head>
+<body class="body">
+
+    <div class="alert">
+        <h1 class="alert__title">information</h1>
+        <p class="alert__message"></p>
+        <button class="alert__btn-close">
+            <img src="./img/close-alert-btn-img.svg" alt="close button" class="btn-close__img">
+        </button>
+    </div>
+    
+    <div class="start">
+        <div class="bg-lines"></div>
+        <button class="btn-start">start</button>
+    </div>
+
+    <main class="main hidden">
+        <header class="header">
+            <div class="info">menu</div>
+        </header>
+        
+        <aside class="sidebar">
+            <div class="chart chart-1"></div>
+            <div class="chart chart-2"></div>
+            <div class="chart chart-3"></div>
+            <div class="chart chart-4">
+                <div class="circles"></div>
+                <p class="chart-4__text">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="chart chart-5"></div>
+        </aside>
+        
+        <section class="section menu">
+            <div class="nav">
+                <button class="btn-arrow btn-arrow-left">
+                    <img src="./img/menu-arrow.svg" alt="menu-arrow" class="btn-arrow-left__img">
+                </button>
+                <ul class="steps">
+                    <li class="step step-1 active">01</li>
+                    <li class="step step-2">02</li>
+                    <li class="step step-3">03</li>
+                </ul>
+                <button class="btn-arrow btn-arrow-right">
+                    <img src="./img/menu-arrow.svg" alt="menu-arrow" class="btn-arrow-right__img">
+                </button>
+            </div>
+
+            <button class="btn btn-menu btn-customise">
+                <span class="btn__text">customise</span>
+            </button>
+            <button class="btn btn-menu btn-install hidden">
+                <span class="btn__text">install</span>
+            </button>
+            <button class="btn btn-menu btn-test hidden">
+                <span class="btn__text">test</span>
+            </button>
+        </section>
+
+        <section class="section customise hidden">
+            <div class="device">
+                <div class="device__wireframe">
+                    <img src="./img/cube.svg" alt="cube" class="device__cube hidden">
+                    <img src="./img/sphere.svg" alt="sphere" class="device__sphere">
+                    <img src="./img/cone.svg" alt="cone" class="device__cone hidden">
+                </div>
+                <div class="device__projector">
+                    <img src="./img/projector.svg" alt="projector" class="device__projector">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card card-1">
+                    <h3 class="card__title">form</h3>
+                    <div class="card__buttons">
+                        <button class="btn-choose-form btn-choose-form-1">
+                            <img src="./img/form-1.svg" alt="cube" class="form-img">
+                        </button>
+                        <button class="btn-choose-form btn-choose-form-2">
+                            <img src="./img/form-2.svg" alt="sphere" class="form-img">
+                        </button>
+                        <button class="btn-choose-form btn-choose-form-3">
+                            <img src="./img/form-3.svg" alt="cone" class="form-img">
+                        </button>
+                        <button class="btn-choose-form btn-choose-form-1">
+                            <img src="./img/form-1.svg" alt="cube" class="form-img">
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <h3 class="card__title">color</h3>
+                    <div class="card__buttons">
+                        <button class="btn-choose-color btn-choose-color-1"></button>
+                        <button class="btn-choose-color btn-choose-color-2"></button>
+                        <button class="btn-choose-color btn-choose-color-3"></button>
+                        <button class="btn-choose-color btn-choose-color-4"></button>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <h3 class="card__title">processor</h3>
+                    <div class="card__buttons">
+                        <button class="btn-choose-processor btn-choose-processor-1">
+                            <img src="./img/processor-1.svg" alt="processor" class="processor-img">
+                        </button>
+                        <button class="btn-choose-processor btn-choose-processor-2">
+                            <img src="./img/processor-2.svg" alt="processor" class="processor-img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section install hidden">
+        </section>
+        <section class="section test hidden">
+        </section>
+
+        <button class="btn btn-main btn-continue hidden">
+            <span class="btn__text">continue</span>
+        </button>
+        <button class="btn btn-main btn-finish hidden">
+            <span class="btn__text">finish</span>
+        </button>
+    </main>
+
+    <div class="cursor"></div>
+
+
+
+    <script src="anime.min.js" type="module" charset="utf-8"></script>
+    <script src="./js/index.js" type="module" charset="utf-8"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Major+Mono+Display&display=swap');
+
+@import url(./02__reset.css);
+@import url(./03__custom-properties.css);
+@import url(./04__layout.css);
+@import url(./07__hover.css);
+@import url(./08__animation.css);
+@import url(./09__media-queries.css);
+
+@import url(./objects/alerts.css);
+@import url(./objects/buttons.css);
+@import url(./objects/cards.css);
+@import url(./objects/cursor.css);
+@import url(./objects/device.css);
+@import url(./objects/charts.css);
+
+.hidden {
+  display: none;
+}
+.active {
+    /* font-size: 200px; */
+    font-size: 15vw;
+    opacity: 1;
+}

@@ -1,0 +1,33 @@
+.device {
+    position: absolute;
+
+    width: 40%;
+    /* z-index: 3; */
+    top: 22%;
+    left: 26%;
+    /* right: 0;
+    bottom: 0; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 40px;
+}
+.device__wireframe {
+    width: 100%;
+}
+.device__wireframe img {
+    width: 100%;
+    height: 100%;
+}
+
+.device__projector {
+    width: 55%;
+    /* margin-left: 10px; */
+}
+.device__projector img {
+    width: 100%;
+    height: 100%;
+}
