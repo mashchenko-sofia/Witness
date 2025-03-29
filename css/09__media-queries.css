@@ -1,0 +1,236 @@
+@media (width <= 1289px) {
+    .main {
+        grid-template-rows: 0fr 16fr;
+        grid-template-columns: 0fr 6fr;
+        grid-template-areas: "header header" "section section";
+    }
+    .sidebar {
+        grid-area: none;
+        position: absolute;
+        z-index: 1500;
+        left: 0;
+        top: 0;
+
+        width: min(70vw, 250px);
+        height: 100%;
+        padding: 15px 15px 15px 15px;
+        box-sizing: border-box;
+        background: rgba(148, 148, 148, 0.5);
+        backdrop-filter: blur(5px);
+
+        translate: -100%;
+    }
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+    }
+    .header {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .btn-open-sidebar {
+        display: block;
+    }
+
+
+
+    .processor-box {
+        top: 2%;
+        left: 2%;
+        translate: unset;
+    }
+    .processor-part {
+        transform: scale(0.9);
+    }
+    .processor-part__1 {
+        left: 80%;
+    }
+    .processor-part__2 {
+        top: 25%;
+        left: 75%;
+
+        rotate: -150deg;
+    }
+    .processor-part__3 {
+        top: 58%;
+        left: 10%;
+
+        rotate: 185deg;
+    }
+    .processor-part__4 {
+        top: 80%;
+        left: 10%;
+
+        rotate: 190deg;
+    }
+    .processor-part__5 {
+        top: 80%;
+        left: 35%;
+
+        rotate: -120deg;
+    }
+    .processor-part__6 {
+        top: 60%;
+        left: 50%;
+
+        rotate: 135deg;
+    }
+    .processor-part__7 {
+        top: 70%;
+        left: 60%;
+
+        rotate: 210deg;
+    }
+    .processor-part__8 {
+        top: 40%;
+        left: 80%;
+
+        rotate: 165deg;
+    }
+}
+@media (width <= 900px) {
+    .body {
+        padding: 0%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .section {
+        height: 100vh;
+        border: none;
+    }
+    .header {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        justify-content: space-between;
+
+        padding: 15px 15px;
+    }
+    .info {
+        padding: 0;
+    }
+    .info::after {
+        display: none;
+    }
+
+    .nav, .steps {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .btn-arrow-left {
+        rotate: 90deg;
+    }
+    .btn-arrow-right {
+        rotate: 270deg;
+    }
+
+
+
+    .device {
+        top: unset;
+        left: 40%;
+        width: min(600px, 100vw);
+        align-self: center;
+    }
+    .device__projector {
+        display: none;
+    }
+    .card-1 {
+        top: 5%;
+        left: 8%;
+    }
+    .card-2 {
+        top: 35%;
+        left: 5%;
+        right: unset;
+    }
+    .card-3 {
+        left: 8%;
+    }
+    .card-2::after {
+        top: 50%;
+        left: 100%;
+        rotate: -30deg;
+    }
+    .card-3::after {
+        top: -80%;
+        rotate: -65deg;
+    }
+
+
+
+    .btn {
+        right: 0%;
+        bottom: 10%
+    }
+}
+@media (width <= 768px) {
+    .processor-box {
+        width: 70%;
+        top: 2%;
+        left: 2%;
+        translate: unset;
+    }
+    .processor-part {
+        transform: scale(0.9);
+    }
+    .processor-part__1 {
+        left: 75%;
+    }
+    .processor-part__2 {
+        top: 25%;
+        left: 75%;
+
+        rotate: -100deg;
+    }
+    .processor-part__3 {
+        top: 52%;
+        left: 5%;
+
+        rotate: 185deg;
+    }
+    .processor-part__4 {
+        top: 70%;
+        left: 5%;
+
+        rotate: 190deg;
+    }
+    .processor-part__5 {
+        top: 80%;
+        left: 28%;
+
+        rotate: -120deg;
+    }
+    .processor-part__6 {
+        top: 50%;
+        left: 50%;
+
+        rotate: 135deg;
+    }
+    .processor-part__7 {
+        top: 70%;
+        left: 55%;
+
+        rotate: 190deg;
+    }
+    .processor-part__8 {
+        top: 40%;
+        left: 75%;
+
+        rotate: 165deg;
+    }
+    .dot {
+        height: 50%;
+    }
+    
+}
+@media (width <= 600px) {
+    .processor-part {
+        transform: scale(0.6);
+        translate: -15% -20%;
+    }
+}

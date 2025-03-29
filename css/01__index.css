@@ -3,22 +3,24 @@
 @import url(./02__reset.css);
 @import url(./03__custom-properties.css);
 @import url(./04__layout.css);
-@import url(./07__hover.css);
-@import url(./08__animation.css);
-@import url(./09__media-queries.css);
 
+@import url(./objects/cursor.css);
 @import url(./objects/alerts.css);
 @import url(./objects/buttons.css);
 @import url(./objects/cards.css);
-@import url(./objects/cursor.css);
 @import url(./objects/device.css);
 @import url(./objects/charts.css);
+@import url(./objects/field.css);
+@import url(./objects/processor.css);
+@import url(./objects/menu.css);
+
+@import url(./07__hover.css);
+@import url(./09__media-queries.css);
 
 .hidden {
   display: none;
 }
 .active {
-    /* font-size: 200px; */
-    font-size: 15vw;
+    font-size: min(25vw, 300px);
     opacity: 1;
 }

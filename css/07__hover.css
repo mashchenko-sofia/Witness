@@ -1,0 +1,39 @@
+.btn-start {
+    transition: scale 1s;
+}
+.btn-start:hover {
+    scale: 0.8;
+}
+.btn-start:active {
+    scale: 0.5;
+}
+
+
+
+.btn-arrow {
+    transition: scale 0.5s;
+}
+.btn-arrow:hover {
+    scale: 1.1;
+}
+.btn-arrow:active {
+    scale: 0.8;
+}
+
+
+
+.btn-open-sidebar {
+    transition: scale 0.5s ease-in-out;
+}
+.btn-open-sidebar:hover {
+    scale: 0.8;
+}
+
+
+
+.btn-close-sidebar {
+    transition: scale 0.5s ease-in-out;
+}
+.btn-close-sidebar:hover {
+    scale: 0.8;
+}

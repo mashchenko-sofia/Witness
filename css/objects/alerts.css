@@ -1,34 +1,30 @@
 .alert {
     position: absolute;
-    z-index: 100;
-
-    /* align-items: center; */
-
-
-    /* width: 100px; */
-    /* height: 50px; */
+    z-index: 2000;
 
     background: rgb(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
+    filter: drop-shadow(17px 17px 7px rgba(0, 0, 0, 1));
 
     border-width: 2px 2px 2px 10px;
     border-color: var(--color-main);
     border-style: solid;
 
-    padding:  10px 20px;
-    max-width: 800px;
+    padding: 1% 2%;
+    width: min(80vw, 700px);
+
     
     translate: 0 -200%;
     opacity: 0;
     scale: 0.5;
 }
 .alert__title {
-    font-size: 32px;
-    margin: 0 0 20px 0;
+    margin: 0 0 2% 0;
+    font-size: min(6vw, 32px);
 }
 .alert__message {
     font-family: var(--font-secondary);
-    font-size: 36px;
+    font-size: min(5vw, 36px);
 }
 .alert__btn-close {
     position: absolute;

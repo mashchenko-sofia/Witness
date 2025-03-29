@@ -1,5 +1,5 @@
 .btn-start {
-    font-size: 10vw;
+    font-size: max(10vw, 50px);
     
     text-shadow: 20px 20px 15px black;
 }
@@ -8,14 +8,10 @@
 
 .btn {
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     
-    width: 360px;
-    height: 70px; 
-   
-    /* width: 30vw;
-    height: 12vw; */
-    padding: 0 0 0 40px;
+    padding: 1.5vw 1.5vw 1.5vw 10vw;
+    box-shadow: 17px 17px 7px rgba(0, 0, 0, 0.25);
 }
 .btn::after {
     content: "";
@@ -31,7 +27,6 @@
     left: 0;
 }
 .btn__text {
-    /* font-size: calc(2vw + 10px); */
     font-size: 32px;
 }
 
@@ -51,4 +46,28 @@
 
 .btn-arrow-right {
     rotate: 180deg;
+}
+
+
+.btn-open-sidebar {
+    display: none;
+    width: 30px;
+    height: 30px;
+
+    border-top: 5px solid rgba(255, 255, 255, 1);
+    border-left: 5px solid rgba(255, 255, 255, 1);
+
+    position: relative;
+    box-sizing: border-box;
+}
+.btn-open-sidebar::after {
+    content: '' ;
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    height: 35px;
+    background: white;
+    top: -25%;
+    left: 35%;
+    transform: rotate(-45deg);
 }

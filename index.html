@@ -12,7 +12,7 @@
         <h1 class="alert__title">information</h1>
         <p class="alert__message"></p>
         <button class="alert__btn-close">
-            <img src="./img/close-alert-btn-img.svg" alt="close button" class="btn-close__img">
+            <img src="./img/btn-close.svg" alt="close button" class="btn-close__img">
         </button>
     </div>
     
@@ -22,25 +22,49 @@
     </div>
 
     <main class="main hidden">
+
         <header class="header">
+            <button class="btn-open-sidebar">
+            </button>
             <div class="info">menu</div>
         </header>
         
         <aside class="sidebar">
-            <div class="chart chart-1"></div>
+            <div class="sidebar-header">
+                <button class="btn-close-sidebar">
+                    <img src="./img/btn-close.svg" alt="close sidebar">
+                </button>
+                <div class="sidebar-header-text">info</div>
+            </div>
+            <div class="chart chart-1">
+                <svg width="108" height="160" viewBox="0 0 108 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line id="line-1" x1="8" y1="101" x2="87" y2="13" stroke="white" />
+                    <line id="line-2" x1="81" y1="84" x2="87" y2="13" stroke="white" />
+                    <line id="line-3" x1="81" y1="84" x2="99" y2="151" stroke="white" />
+                    <line id="line-4" x1="8" y1="101" x2="99" y2="151" stroke="white" />
+                    <circle id="circle-1" cx="87.1915" cy="14.1915" r="2" fill="white" />
+                    <rect id="rect-1" x="73.5" y="0.5" width="30" height="30" fill="white" fill-opacity="0.4" stroke="white" />
+                    <circle id="circle-2" cx="81.8457" cy="83.8457" r="2" fill="white" />
+                    <rect id="rect-2" x="76.5" y="78.5" width="10" height="10" fill="white" fill-opacity="0.4" stroke="white" />
+                    <circle id="circle-3" cx="7.48736" cy="100.487" r="2" fill="white" />
+                    <rect id="rect-3" x="0.5" y="93.5" width="16" height="16" fill="white" fill-opacity="0.4" stroke="white" />
+                    <circle id="circle-4" cx="98.6521" cy="150.652" r="2" fill="white" />
+                    <rect id="rect-4" x="90.5" y="142.5" width="22" height="22" fill="white" fill-opacity="0.4" stroke="white" />
+                </svg>
+            </div>
             <div class="chart chart-2"></div>
             <div class="chart chart-3"></div>
             <div class="chart chart-4">
-                <div class="circles"></div>
-                <p class="chart-4__text">
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat.
-                </p>
+                <div class="chart-4__els">
+                    <img src="./img/circle-1.svg" alt="" class="chart-4__el chart-4__el-1">
+                    <img src="./img/circle-2.svg" alt="" class="chart-4__el chart-4__el-2">
+                    <img src="./img/circle-3.svg" alt="" class="chart-4__el chart-4__el-3">
+                </div>
+                <div class="chart-4__text">
+                    <p>Lorem ipsum dolor sit amet lsdlkjf sldkl</p>
+                    <p>Lorem ipsum dolor sit amet sdd lsuv</p>
+                    <p>Lorem ipsum dolor sit amet sdpq uq</p>
+                </div>
             </div>
             <div class="chart chart-5"></div>
         </aside>
@@ -73,10 +97,10 @@
 
         <section class="section customise hidden">
             <div class="device">
-                <div class="device__wireframe">
-                    <img src="./img/cube.svg" alt="cube" class="device__cube hidden">
-                    <img src="./img/sphere.svg" alt="sphere" class="device__sphere">
-                    <img src="./img/cone.svg" alt="cone" class="device__cone hidden">
+                <div class="device__forms">
+                    <img src="./img/cube.svg" alt="cube" class=" device__form device__form1 hidden">
+                    <img src="./img/sphere.svg" alt="sphere" class="device__form device__form2">
+                    <img src="./img/cone.svg" alt="cone" class="device__form device__form3 hidden">
                 </div>
                 <div class="device__projector">
                     <img src="./img/projector.svg" alt="projector" class="device__projector">
@@ -87,16 +111,13 @@
                     <h3 class="card__title">form</h3>
                     <div class="card__buttons">
                         <button class="btn-choose-form btn-choose-form-1">
-                            <img src="./img/form-1.svg" alt="cube" class="form-img">
+                            <img src="./img/btn-form1.svg" alt="cube" class="form-img">
                         </button>
                         <button class="btn-choose-form btn-choose-form-2">
-                            <img src="./img/form-2.svg" alt="sphere" class="form-img">
+                            <img src="./img/btn-form2.svg" alt="sphere" class="form-img">
                         </button>
                         <button class="btn-choose-form btn-choose-form-3">
-                            <img src="./img/form-3.svg" alt="cone" class="form-img">
-                        </button>
-                        <button class="btn-choose-form btn-choose-form-1">
-                            <img src="./img/form-1.svg" alt="cube" class="form-img">
+                            <img src="./img/btn-form3.svg" alt="cone" class="form-img">
                         </button>
                     </div>
                 </div>
@@ -123,8 +144,82 @@
             </div>
         </section>
         <section class="section install hidden">
+            <div class="processor-box">
+                <svg class="processor-box__img" width="441" height="441" viewBox="0 0 441 441" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="441" height="441" fill="#B8B8B8" fill-opacity="0.6" />
+                    <g filter="url(#filter0_i_1648_7382)">
+                        <path class="box-part box-part__1"
+                        d="M148.269 309.457H173.828V320.708V321.208H174.328H208.349V337.835H188.136H182.958H182.458V338.335V344.44V350.086V380.643H177.78H177.28V381.143V401.288V401.788H177.78H182.458V422.09L174.958 431.005H98.8828V381.298L148.269 309.457Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__2"
+                        d="M209.349 17.258L209.349 17.758L208.849 17.758L182.596 17.758L182.596 59.9078L281.342 59.9078L281.842 59.9078L281.842 60.4078L281.842 81.4831L329.603 81.4831L329.603 60.4078L329.603 60.2547L329.688 60.1278L350.315 29.6185L350.315 5.67578L308.096 5.67578L209.349 5.67578L209.349 17.258Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__3"
+                        d="M112.555 172.785V191.306H93.7054V170.304V170.113L93.5781 169.971L88.5273 164.324V9.12891H108.671V29.717V30.217H109.171H132.836V58.1614H129.02H128.52V58.6614V67.3447V67.8447H129.02H272.212V91.7407V92.2407H272.712H296.808V102.905V103.405H297.308H301.555V216.115H262.788H248.758L236.103 203.18V127.301V126.801H235.603H118.233H117.733V127.301V164.372L112.631 172.52L112.555 172.641V172.785Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__4"
+                        d="M91.9805 214.693V202.445H130.316H130.816V201.945V139.445H153.011L163.661 147.966L163.798 148.075H163.974H197.2H197.387L197.528 147.953L207.311 139.445H226.474V207.345L180.021 252.938L179.871 253.085V253.295V299.397H122.617V247.685V247.488L122.483 247.344L91.9805 214.693Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__5"
+                        d="M431.006 44.2676L431.006 5.67466L359.081 5.67466L359.081 31.4966L359.081 31.6489L358.996 31.7753L338.8 61.8543L338.8 89.75L338.8 90.25L338.3 90.25L312.047 90.25L312.047 152.25L338.3 152.25L352.275 152.25L352.275 144.983L352.275 144.483L352.775 144.483L377.999 144.483L378.223 144.483L378.372 144.651L385.127 152.25L431.006 152.25L431.006 125.295L421.175 111.617L421.081 111.486L421.081 111.325L421.081 56.9555L421.081 56.7813L421.189 56.6448L431.006 44.2676Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__6"
+                        d="M24.8082 16.2404H25.3082V15.7404V5.5H77.8151V93.1879L70.4987 118.804L70.4795 118.871V118.941V140.856H39.9795V123.611V123.111H39.4795H11.5V16.2404H24.8082Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__7"
+                        d="M225.743 431.034H192.5V343.575H216.164H216.664V343.075V309.418V308.918H216.164H192.5V255.02L224.27 223.659H311.959H312.459V223.159V164.5H409.447L417.083 172.49V259.333V259.552L417.245 259.701L431.418 272.74V431.034H340.653L330.445 420.263L330.297 420.107H330.082H236.877H236.67L236.523 420.253L225.743 431.034Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                        <path class="box-part box-part__8"
+                        d="M78.0338 379.291V431.866H11.7188V320.243H28.479H28.979V319.743V257.606V257.106H28.479H11.7188V153.25H78.0338V215.75V215.936L78.1558 216.077L114.28 257.793V325.631L78.1199 379.011L78.0338 379.138V379.291Z"
+                        fill="#4D4D4D" fill-opacity="0.5" stroke="white" />
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M159.372 34.3448H151.084V31.668H159.372C166.118 31.668 171.587 37.2607 171.587 44.1597V59.7743H168.969V44.1597C168.969 38.739 164.673 34.3448 159.372 34.3448Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M157.73 38.6519H151.084V36.0117H157.73C163.358 36.0117 167.921 40.5429 167.921 46.1323V59.7731H165.262V46.1323C165.262 42.001 161.89 38.6519 157.73 38.6519Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M161.317 30.6477H151.084V28H161.317C169.426 28 175.999 34.5198 175.999 42.5623V59.7723H173.33V42.5623C173.33 35.9821 167.952 30.6477 161.317 30.6477Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M155.463 53.1212L163.916 53.1212L163.916 55.7656L155.463 55.7656C148.583 55.7656 143.006 50.2404 143.006 43.4248L143.006 27.9988L145.675 27.9988L145.675 43.4248C145.675 48.78 150.057 53.1212 155.463 53.1212Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M157.27 49.0627L163.916 49.0627L163.916 51.6953L157.27 51.6953C151.642 51.6953 147.079 47.1771 147.079 41.6036L147.079 28.0018L149.738 28.0018L149.738 41.6036C149.738 45.7232 153.11 49.0627 157.27 49.0627Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M153.683 57.1257L163.916 57.1257L163.916 59.7734L153.683 59.7734C145.574 59.7734 139.001 53.2537 139.001 45.2111L139.001 28.0011L141.67 28.0011L141.67 45.2111C141.67 51.7914 147.048 57.1257 153.683 57.1257Z"
+                        fill="white" />
+                    <defs>
+                        <filter id="filter0_i_1648_7382" x="11" y="5" width="425.918" height="432.367" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha" />
+                            <feOffset dx="9" dy="9" />
+                            <feGaussianBlur stdDeviation="2.5" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1648_7382" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div class="processor-parts">
+                <img src="./img/processor-part-1.svg" alt="processor part" class="processor-part processor-part__1">
+                <img src="./img/processor-part-2.svg" alt="processor part" class="processor-part processor-part__2">
+                <img src="./img/processor-part-3.svg" alt="processor part" class="processor-part processor-part__3">
+                <img src="./img/processor-part-4.svg" alt="processor part" class="processor-part processor-part__4">
+                <img src="./img/processor-part-5.svg" alt="processor part" class="processor-part processor-part__5">
+                <img src="./img/processor-part-6.svg" alt="processor part" class="processor-part processor-part__6">
+                <img src="./img/processor-part-7.svg" alt="processor part" class="processor-part processor-part__7">
+                <img src="./img/processor-part-8.svg" alt="processor part" class="processor-part processor-part__8">
+            </div>
         </section>
         <section class="section test hidden">
+            <div class="field"></div>
         </section>
 
         <button class="btn btn-main btn-continue hidden">
@@ -138,8 +233,7 @@
     <div class="cursor"></div>
 
 
-
-    <script src="anime.min.js" type="module" charset="utf-8"></script>
+    
     <script src="./js/index.js" type="module" charset="utf-8"></script>
 
 </body>

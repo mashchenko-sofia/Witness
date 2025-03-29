@@ -8,6 +8,10 @@
     height: 28%;
 
     border: 1px solid var(--color-main);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .chart-2 {
     height: 5%;
@@ -35,7 +39,7 @@
     justify-content: space-between;
 }
 .chart-5 {
-    height: 28%;
+    height: 25%;
     
     border: 1px solid var(--color-main);
 
@@ -47,23 +51,10 @@
 
 
 
-.circles {
-    display: flex;
-    flex-direction: column;
-
-    width: 28%;
-    background: var(--color-main);
+.chart-1 svg {
+    overflow-x: visible;
+    overflow-y: visible;
 }
-.chart-4__text {
-    width:  65%;
-
-    font-family: var(--font-secondary);
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 13px;
-}
-
-
 
 
 
@@ -72,7 +63,6 @@
     height: 5px;
 
     background: rgb(255, 255, 255, 0.2);
-    /* opacity: 0.2; */
 }
 .chart-2__el-line {
     width: 90%;
@@ -81,6 +71,8 @@
     background: var(--color-main);
 }
 
+
+
 .chart-3__el {
     width: 5px;
     height: 5px;
@@ -88,6 +80,33 @@
     border-radius: 50%;
     background: var(--color-main);
 }
+
+
+
+.chart-4__els {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    width: 20%;
+}
+.chart-4__el {
+    width: 100%;
+}
+.chart-4__text {
+    width:  75%;
+
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    line-height: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
 .chart-5__el {
     width: 3px;
     height: 50px;

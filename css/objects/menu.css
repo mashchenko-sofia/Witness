@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: drop-shadow(17px 17px 7px rgba(0, 0, 0, 0.5));
+}
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.step {
+    font-size: 7vw;
+    opacity: 0.8;
+}
